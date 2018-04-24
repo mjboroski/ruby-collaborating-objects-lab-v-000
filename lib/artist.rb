@@ -17,9 +17,9 @@ class Artist
     @@all<<self
   end
 
-  def self.find_or_create_by_name(name)
-    @name=name if @name != nil
-  end
+  # def self.find_or_create_by_name(name)
+  #   @name=name if @name != nil
+  # end
 
   # def print_songs
   #   holder=[]
