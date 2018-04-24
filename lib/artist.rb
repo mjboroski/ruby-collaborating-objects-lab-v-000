@@ -22,7 +22,7 @@ class Artist
   end
 
   def print_songs
-    @songs.each {|song| puts song} if @songs != nil
+    @songs.each {|song| puts "#{song}"} if @songs != nil
   end
 
 end
