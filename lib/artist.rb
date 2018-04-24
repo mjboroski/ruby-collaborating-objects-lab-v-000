@@ -19,7 +19,7 @@ class Artist
 
   def self.find_or_create_by_name(name)
     if @name != nil
-      @name = Artist.name
+      @name << Artist.name
     end
   end
 
