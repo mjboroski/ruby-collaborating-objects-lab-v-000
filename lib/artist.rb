@@ -26,7 +26,7 @@ class Artist
   end
 
   def self.find(name)
-    @names.detect{|n| n==name}
+    self.all.find {|artist| artist.name == name }
   end
 
   def self.find_or_create_by_name(name)
