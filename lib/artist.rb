@@ -8,6 +8,10 @@ class Artist
     @name=name
   end
 
+  def all
+    @@all
+  end
+  
   def save
     @@all<<self
   end
