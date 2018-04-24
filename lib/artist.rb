@@ -13,8 +13,20 @@ class Artist
     @@all
   end
 
+  def add_song(song)
+    @songs<<song
+  end
+
   def save
     @@all<<self
+  end
+
+  def self.create(name)
+
+  end
+
+  def self.find(name)
+    @names.detect{|n| n==name}
   end
 
   def self.find_or_create_by_name(name)
