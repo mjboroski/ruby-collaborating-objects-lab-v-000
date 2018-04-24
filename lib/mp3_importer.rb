@@ -7,7 +7,13 @@ class MP3Importer
   end
 
   def files
-    @directory.each {|file| @files<<"#{file}"}
+    @directory.each do |file|
+      file.split(' - ')
+      artist=file[0]
+      title=file[1]
+      genre=file[2].slice-5
+     @files<<"#{file}"}
+   end
   end
 
   def import
