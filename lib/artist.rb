@@ -12,8 +12,8 @@ class Artist
     @@all<<self
   end
 
-  def find_or_create_by_name
-
+  def find_or_create_by_name(name)
+    @name=name if @name != nil
   end
 
   def print_songs
