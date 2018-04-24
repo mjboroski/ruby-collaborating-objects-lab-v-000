@@ -11,7 +11,7 @@ class MP3Importer
       file.split(' - ')
       artist=file[0]
       title=file[1]
-      genre=file[2].slice-5
+      genre=file[2].slice(-5)
      @files<<"#{file}"}
    end
   end
