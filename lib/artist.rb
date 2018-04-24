@@ -21,10 +21,10 @@ class Artist
     @name=name if @name != nil
   end
 
-  def print_songs
-    holder=[]
-    @songs.each {|song| holder<<song} if @songs != nil
-    holder
-  end
+  # def print_songs
+  #   holder=[]
+  #   @songs.each {|song| holder<<song} if @songs != nil
+  #   holder
+  # end
 
 end
