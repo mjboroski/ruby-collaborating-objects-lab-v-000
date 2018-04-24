@@ -22,7 +22,9 @@ class Artist
   end
 
   def print_songs
-    @songs.each {|song| puts song} if @songs != nil
+    holder=[]
+    @songs.each {|song| holder<<song} if @songs != nil
+    holder
   end
 
 end
