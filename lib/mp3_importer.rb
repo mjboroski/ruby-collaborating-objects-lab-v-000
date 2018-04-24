@@ -7,17 +7,11 @@ class MP3Importer
   end
 
   def files
-    @directory.each do |file|
-      file.split(' - ')
-      artist=file[0]
-      title=file[1]
-      genre=file[2].slice(-5)
-     @files<<"#{file}"
-   end
+    @files ||= Dir.glob("#{path}/*.mp3").collect{ |f| f.gsub("#{path}/", "") }
   end
 
   def import
-    @directory = Dir.new(db/mp3s)
+
   end
 
 end
