@@ -8,7 +8,7 @@ class Artist
     @name=name
   end
 
-  def self.save
+  def save
     @@all<<self
   end
 
